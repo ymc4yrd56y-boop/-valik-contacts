@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=yes">
 
   <title>Валік Смерека — Контакти</title>
 
@@ -36,41 +37,33 @@
     .card {
       width: 100%;
       max-width: 430px;
-
       padding: 38px 25px;
-
       text-align: center;
 
       border-radius: 28px;
 
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
 
-      border: 1px solid rgba(255, 255, 255, 0.15);
-
-      box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
 
       backdrop-filter: blur(15px);
     }
 
     h1 {
       margin: 0 0 8px;
-
       font-size: 32px;
       font-weight: 800;
     }
 
     .subtitle {
       margin-bottom: 28px;
-
       color: #cfd6df;
-
       font-size: 16px;
     }
 
     .button {
       display: flex;
-
       align-items: center;
       justify-content: center;
 
@@ -83,63 +76,50 @@
       border-radius: 16px;
 
       text-decoration: none;
-
       color: white;
 
       font-size: 18px;
       font-weight: 700;
 
-      transition:
-        transform 0.15s ease,
-        opacity 0.15s ease;
-
       -webkit-tap-highlight-color: transparent;
     }
 
-    .button:active {
-      transform: scale(0.97);
-      opacity: 0.85;
-    }
-
-    /* VIBER */
     .viber {
       background: #7360f2;
     }
 
-    /* TELEGRAM */
     .telegram {
       background: #229ed9;
     }
 
-    /* PHONE */
     .phone {
       background: #20b86b;
     }
 
     .number {
+      display: block;
+
       margin-top: 25px;
 
-      font-size: 18px;
-      font-weight: 600;
+      color: white;
+      text-decoration: none;
 
+      font-size: 20px;
+      font-weight: 700;
       letter-spacing: 0.5px;
-    }
-
-    .small {
-      margin-top: 20px;
-
-      color: #aeb7c4;
-
-      font-size: 13px;
-      line-height: 1.5;
     }
 
     .business {
       margin-top: 25px;
-
       color: #bfc7d2;
-
       font-size: 13px;
+    }
+
+    .small {
+      margin-top: 20px;
+      color: #aeb7c4;
+      font-size: 13px;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -154,30 +134,20 @@
       Зв'яжіться зі мною
     </div>
 
-
-    <!-- VIBER BUSINESS -->
     <a
       class="button viber"
       href="https://viber.me/380961469583"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       💬 Написати у Viber
     </a>
 
-
-    <!-- TELEGRAM -->
     <a
       class="button telegram"
       href="https://t.me/Smereka_Valik"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       ✈️ Написати в Telegram
     </a>
 
-
-    <!-- PHONE -->
     <a
       class="button phone"
       href="tel:+380961469583"
@@ -185,16 +155,16 @@
       📞 Зателефонувати
     </a>
 
-
-    <div class="number">
+    <a
+      class="number"
+      href="tel:+380961469583"
+    >
       +380 96 146 95 83
-    </div>
-
+    </a>
 
     <div class="business">
       🏪 Магазин побутова техніка
     </div>
-
 
     <div class="small">
       Натисніть потрібну кнопку для зв'язку
