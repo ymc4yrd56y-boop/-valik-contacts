@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=yes">
-
-  <title>Валік Смерека — Контакти</title>
+  <meta name="theme-color" content="#10101a">
+  <meta name="description" content="Контакти магазину побутової техніки. Зв'язок через Viber, Telegram або телефон.">
+  <title>Магазин побутова техніка | Контакти</title>
 
   <style>
     * {
@@ -15,135 +15,144 @@
     body {
       margin: 0;
       min-height: 100vh;
+      padding: 28px 16px;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #ffffff;
       background:
-        radial-gradient(circle at top, #243b55 0%, #141e30 45%, #080c12 100%);
+        radial-gradient(circle at top, #30204d 0, transparent 42%),
+        linear-gradient(145deg, #10101a, #191525 55%, #0b0b12);
     }
 
-    .card {
+    .container {
       width: 100%;
-      max-width: 430px;
-      padding: 32px 25px;
+      max-width: 420px;
+      padding: 30px 22px;
       text-align: center;
-      border-radius: 28px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
-      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.055);
+      box-shadow: 0 18px 55px rgba(0, 0, 0, 0.38);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 24px;
+      font-size: 42px;
+      background: linear-gradient(135deg, #ffd36a, #ff8c32);
+      box-shadow: 0 8px 28px rgba(255, 153, 50, 0.22);
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: 32px;
+      margin: 0 0 9px;
+      font-size: 27px;
+      line-height: 1.2;
       font-weight: 800;
     }
 
     .subtitle {
-      margin-bottom: 22px;
-      color: #cfd6df;
-      font-size: 16px;
+      margin: 0 0 25px;
+      color: #c7bfd5;
+      font-size: 15px;
     }
 
     .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 100%;
-      min-height: 60px;
-      margin: 14px 0;
-      padding: 15px 20px;
-      border-radius: 16px;
+      min-height: 54px;
+      margin: 11px 0;
+      padding: 15px 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 15px;
+      color: #ffffff;
       text-decoration: none;
-      color: white;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
+      transition: transform 0.15s ease, opacity 0.15s ease;
     }
 
-    .browser {
-      background: white;
-      color: #17202a;
-      font-weight: 800;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    .button:active {
+      transform: scale(0.98);
+      opacity: 0.85;
     }
 
     .viber {
-      background: #7360f2;
+      background: linear-gradient(135deg, #8e48dc, #6534b8);
     }
 
     .telegram {
-      background: #229ed9;
+      background: linear-gradient(135deg, #32b8e8, #168bd0);
     }
 
     .phone {
-      background: #20b86b;
+      background: linear-gradient(135deg, #22ad72, #138554);
     }
 
-    .phone-help {
-      margin: -5px 5px 20px;
-      color: #c7ced8;
-      font-size: 13px;
-      line-height: 1.5;
+    .channel {
+      background: linear-gradient(135deg, #a45ce8, #6737bb);
+      border-color: rgba(224, 194, 255, 0.4);
     }
 
     .number {
-      display: block;
-      margin-top: 8px;
-      color: white;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+      margin: 18px 0 8px;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
     }
 
-    .business {
-      margin-top: 25px;
-      color: #bfc7d2;
-      font-size: 13px;
-    }
-
-    .small {
-      margin-top: 20px;
-      color: #aeb7c4;
-      font-size: 13px;
+    .hint {
+      margin: 8px 0 20px;
+      color: #bdb5cb;
+      font-size: 12px;
       line-height: 1.5;
+    }
+
+    .shop {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      color: #f6d28b;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .footer {
+      margin-top: 13px;
+      color: #928aa1;
+      font-size: 12px;
     }
   </style>
 </head>
 
 <body>
-
-  <div class="card">
+  <main class="container">
+    <div class="logo">🏠</div>
 
     <h1>Валік Смерека</h1>
-
-    <div class="subtitle">
-      Зв'яжіться зі мною
-    </div>
-
-    <a
-      class="button browser"
-      href="https://ymc4yrd56y-boop.github.io/-valik-contacts/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      🌐 Відкрити в браузері
-    </a>
+    <p class="subtitle">Зв'яжіться зі мною</p>
 
     <a
       class="button viber"
-      href="https://viber.me/380961469583"
+      href="viber://chat?number=%2B380961469583"
     >
-      💬 Написати у Viber
+      💜 Написати у Viber
     </a>
 
     <a
       class="button telegram"
       href="https://t.me/Smereka_Valik"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       ✈️ Написати в Telegram
     </a>
@@ -155,27 +164,29 @@
       📞 Зателефонувати
     </a>
 
-    <div class="phone-help">
-      Якщо кнопка не працює — відкрийте сторінку
-      у браузері Safari або Chrome
-    </div>
+    <div class="number">+380 96 146 95 83</div>
+
+    <p class="hint">
+      Якщо дзвінок не відкривається в TikTok,
+      відкрийте сторінку в Safari або скопіюйте номер телефону.
+    </p>
 
     <a
-      class="number"
-      href="tel:+380961469583"
+      class="button channel"
+      href="https://invite.viber.com/?g2=AQB7nLqiZ%2FMh%2BFdILny%2FfxflxgQkhD1bI3Q6PSRZuOfV%2BgIrsal15l145T8SFXeA"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      +380 96 146 95 83
+      💜 Приєднатися до Viber-каналу
     </a>
 
-    <div class="business">
+    <div class="shop">
       🏪 Магазин побутова техніка
     </div>
 
-    <div class="small">
-      Натисніть потрібну кнопку для зв'язку
+    <div class="footer">
+      Інструменти та товари для дому
     </div>
-
-  </div>
-
+  </main>
 </body>
 </html>
